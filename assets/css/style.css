@@ -290,8 +290,49 @@ header nav ul li a{
 }
 
 .active_btn{
-  color: rgb(255, 0, 140);
+  color: rgb(236, 72, 153);
   font-weight: 400;
-  
 }
 
+
+
+/* about section */
+
+.about_text h4{
+  font-family: "Long Cang", cursive;
+}
+
+.about_text h2{
+  font-family: "Teko", sans-serif;
+}
+
+.about_text p{
+  font-family: "Didact Gothic", sans-serif;
+}
+
+
+/* service section */
+
+.service_section h4{
+  font-family: "Long Cang", cursive;
+}
+.service_section h2{
+  font-family: "Teko", sans-serif;
+}
+
+.service_img_card h3{
+  font-family: "Teko", sans-serif;
+} 
+
+
+.senior_service_card h2{
+  font-family: "Teko", sans-serif;
+}
+
+.senior_service_card p{
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.senior_service_card a{
+  font-family: "Didact Gothic", sans-serif;
+}

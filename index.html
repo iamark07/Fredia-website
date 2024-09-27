@@ -19,7 +19,9 @@
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Long+Cang&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
 
   <!-- link css -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -40,15 +42,27 @@
       </div>
       <nav class="hidden lg:block">
         <ul class="flex gap-7">
-          <li><a href="index.html" class="active_btn text-2xl">Home</a></li>
-          <li><a href="#about_section" class="text-white text-2xl">About</a></li>
-          <li><a href="#service_section" class="text-white text-2xl">Services</a></li>
-          <li><a href="#gallery_section" class="text-white text-2xl">Gallery</a></li>
-          <li><a href="#blog_section" class="text-white text-2xl">Blog</a></li>
-          <li><a href="#contact_section" class="text-white text-2xl">Contact</a></li>
+          <li><a href="index.html"
+              class="active_btn text-2xl border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Home</a>
+          </li>
+          <li><a href="#about_section"
+              class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">About</a>
+          </li>
+          <li><a href="#service_section"
+              class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Services</a>
+          </li>
+          <li><a href="#gallery_section"
+              class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Gallery</a>
+          </li>
+          <li><a href="#blog_section"
+              class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Blog</a>
+          </li>
+          <li><a href="#contact_section"
+              class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Contact</a>
+          </li>
         </ul>
       </nav>
-      <div class="menu_slider_icon block lg:hidden" onclick="menu_slider()">
+      <div class="menu_slider_icon block lg:hidden cursor-pointer" onclick="menu_slider()">
         <i class="ri-menu-fill text-white text-2xl"></i>
       </div>
       <div
@@ -62,11 +76,16 @@
           <nav class="menu_nav mt-10">
             <ul class="flex flex-col gap-3">
               <li><a href="index.html" class="active_btn text-2xl">Home</a></li>
-              <li><a href="#about_section" class="text-white text-2xl">About</a></li>
-              <li><a href="#service_section" class="text-white text-2xl">Services</a></li>
-              <li><a href="#gallery_section" class="text-white text-2xl">Gallery</a></li>
-              <li><a href="#blog_section" class="text-white text-2xl">Blog</a></li>
-              <li><a href="#contact_section" class="text-white text-2xl">Contact</a></li>
+              <li><a href="#about_section"
+                  class="text-white text-2xl hover:text-pink-600 transition-all duration-300">About</a></li>
+              <li><a href="#service_section"
+                  class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Services</a></li>
+              <li><a href="#gallery_section"
+                  class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Gallery</a></li>
+              <li><a href="#blog_section"
+                  class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Blog</a></li>
+              <li><a href="#contact_section"
+                  class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -183,6 +202,159 @@
 
   </section>
 
+  <!-- about section -->
+  <section class="about_section bg-black py-32 px-5 md:px-10 lg:px-20  grid grid-cols-9 gap-8">
+    <div class="about_text col-span-9 md:col-span-5 lg:col-span-6">
+      <h4 class="text-pink-600 text-3xl md:text-4xl">15 years experience</h4>
+      <h2 class="text-white my-3 text-4xl md:text-6xl">About the Fredia</h2>
+      <p class="text-white text-md">Makeup faucibus mi id convallis pulvinar velit est vulputate elit sed suscin the
+        maurisen
+        anteeget mi. Mauris tincidunt nulla. Donec velit urna congue et magna uthe consele tecmetur accumsan turpis.
+        Etiam ac torto the luctus. Etiam ac tortor porttitor lucte odio ac aliquam augue.
+        <br>
+        <br>
+        Praesent dienis elementum erateu interdun elit ullamcorper sit amet. Curabitur man ipse rhoncus felis nothe
+        viverra dana elemtum velit. The etiam ac tortor porttitor luctus odio ac aliquam augue. Praesent the dienis
+        elemen erateun interdun elit. Curabitur man ipse rhoncus felis nonte viverra.
+      </p>
+      <h4 class="text-pink-600 text-end text-3xl md:text-4xl mt-5">Fredia Victoria</h4>
+      <p class="text-white text-end  text-md">Head Makeup Artist & Hairstylist and Founder</p>
+    </div>
+    <div class="group about_img col-span-9 md:col-span-4 lg:col-span-3 h-full">
+      <figure
+        class="w-full bg-pink-600 pe-5 pb-5 h-full md:group-hover:pe-8 md:group-hover:pb-8 transition-all duration-500">
+        <img src="assets/img/slider/02.jpg" alt="" class=" w-full h-72 md:h-full object-cover">
+      </figure>
+    </div>
+  </section>
+
+  <!-- service section -->
+  <section class="service_section bg-black pt-10 pb-32 px-5 md:px-10 lg:px-20">
+    <div class="beauty_service">
+      <h4 class="text-pink-600 text-3xl md:text-4xl">Our beauty services</h4>
+      <h2 class="text-white my-3 text-4xl md:text-6xl">We provide quality services</h2>
+      <div class="grid grid-cols-9 gap-5 mt-5">
+        <div class="col-span-1 hidden md:block border-t-2 border-pink-600 border-solid"></div>
+        <div class="col-span-9 md:col-span-5">
+          <p class="text-md text-white">
+            <span class="text-pink-600">Our services are summarized as follows. Makeup fusce ornare ut tortor ac
+              hendrerit. Suspendisse sed sem tincidunt dui congue fermentum.</span>
+            <br>
+            <br>
+            Quisque eu nunc bibe endum in finibus elit eget the solli citudin elit. Phasellus rutrum in lacus ut
+            euismod.
+            Vestibulum eleifend tortor orci, eu ornare tortor semper at. Duis scelerisque the nibhse drana moss puse.
+          </p>
+        </div>
+      </div>
+      <div
+        class="service_img_card_container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-8 lg:gap-10 mt-10">
+        <div class="group service_img_card col-span-1 relative cursor-pointer">
+          <figure class="w-full relative overflow-hidden">
+            <img src="assets/img/services/s1.png" alt=""
+              class="w-full group-hover:scale-110 transition-all duration-500">
+            <figcaption
+              class="absolute top-0 left-0 w-full h-full bg-transparent transition-all duration-500 group-hover:bg-black opacity-30">
+            </figcaption>
+          </figure>
+          <h3
+            class="absolute -bottom-6 md:-bottom-4 group-hover:bottom-5 left-1/2 -translate-x-1/2 transition-all duration-300 bg-zinc-900 text-white p-3 md:p-2 lg:p-3 text-xl md:text-sm lg:text-xl  w-3/4 text-center">
+            Hair Makeup</h3>
+        </div>
+        <div class="group service_img_card col-span-1 relative cursor-pointer">
+          <figure class="w-full relative overflow-hidden">
+            <img src="assets/img/services/s2.jpg" alt=""
+              class="w-full group-hover:scale-110 transition-all duration-500">
+            <figcaption
+              class="absolute top-0 left-0 w-full h-full bg-transparent transition-all duration-500 group-hover:bg-black opacity-30">
+            </figcaption>
+          </figure>
+          <h3
+            class="absolute -bottom-6 md:-bottom-4 group-hover:bottom-5 left-1/2 -translate-x-1/2 transition-all duration-300 bg-zinc-900 text-white p-3 md:p-2 lg:p-3 text-xl md:text-sm lg:text-xl  w-3/4 text-center">
+            Fashion Makeup</h3>
+        </div>
+        <div class="group service_img_card col-span-1 relative cursor-pointer">
+          <figure class="w-full relative overflow-hidden">
+            <img src="assets/img/services/s3.jpg" alt=""
+              class="w-full group-hover:scale-110 transition-all duration-500">
+            <figcaption
+              class="absolute top-0 left-0 w-full h-full bg-transparent transition-all duration-500 group-hover:bg-black opacity-30">
+            </figcaption>
+          </figure>
+          <h3
+            class="absolute -bottom-6 md:-bottom-4 group-hover:bottom-5 left-1/2 -translate-x-1/2 transition-all duration-300 bg-zinc-900 text-white p-3 md:p-2 lg:p-3 text-xl md:text-sm lg:text-xl  w-3/4 text-center">
+            Bridal Makeup</h3>
+        </div>
+        <div class="group service_img_card col-span-1 relative cursor-pointer">
+          <figure class="w-full relative overflow-hidden">
+            <img src="assets/img/services/s4.jpg" alt=""
+              class="w-full group-hover:scale-110 transition-all duration-500">
+            <figcaption
+              class="absolute top-0 left-0 w-full h-full bg-transparent transition-all duration-500 group-hover:bg-black opacity-30">
+            </figcaption>
+          </figure>
+          <h3
+            class="absolute -bottom-6 md:-bottom-4 group-hover:bottom-5 left-1/2 -translate-x-1/2 transition-all duration-300 bg-zinc-900 text-white p-3 md:p-2 lg:p-3 text-xl md:text-sm lg:text-xl  w-3/4 text-center">
+            Child Face Painting</h3>
+        </div>
+        <div class="group service_img_card col-span-1 relative cursor-pointer">
+          <figure class="w-full relative overflow-hidden">
+            <img src="assets/img/services/s5.jpg" alt=""
+              class="w-full group-hover:scale-110 transition-all duration-500">
+            <figcaption
+              class="absolute top-0 left-0 w-full h-full bg-transparent transition-all duration-500 group-hover:bg-black opacity-30">
+            </figcaption>
+          </figure>
+          <h3
+            class="absolute -bottom-6 md:-bottom-4 group-hover:bottom-5 left-1/2 -translate-x-1/2 transition-all duration-300 bg-zinc-900 text-white p-3 md:p-2 lg:p-3 text-xl md:text-sm lg:text-xl  w-3/4 text-center">
+            Fantastic Makeup</h3>
+        </div>
+        <div class="group service_img_card col-span-1 relative cursor-pointer">
+          <figure class="w-full relative overflow-hidden">
+            <img src="assets/img/services/s6.jpg" alt=""
+              class="w-full group-hover:scale-110 transition-all duration-500">
+            <figcaption
+              class="absolute top-0 left-0 w-full h-full bg-transparent transition-all duration-500 group-hover:bg-black opacity-30">
+            </figcaption>
+          </figure>
+          <h3
+            class="absolute -bottom-6 md:-bottom-4 group-hover:bottom-5 left-1/2 -translate-x-1/2 transition-all duration-300 bg-zinc-900 text-white p-3 md:p-2 lg:p-3 text-xl md:text-sm lg:text-xl  w-3/4 text-center">
+            Effect Makeup</h3>
+        </div>
+      </div>
+    </div>
+    <div class="senior_services mt-40">
+      <h4 class="text-pink-600 text-3xl md:text-4xl">Our senior services</h4>
+      <h2 class="text-white my-3 text-4xl md:text-6xl">Makeup Services</h2>
+      <div class="senior_service_card_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 gap-10 lg:gap-5 xl:gap-10">
+        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+          <i class="ri-user-smile-line text-pink-600 text-7xl"></i>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Face Makeup</h3>
+          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
+          <a href="#" class="text-white mt-3">Read More</a>
+        </div>
+        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+          <i class="ri-eye-line text-pink-600 text-7xl"></i>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Eye Makeup</h3>
+          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
+          <a href="#" class="text-white mt-3">Read More</a>
+        </div>
+        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+          <i class="ri-eye-close-line text-pink-600 text-7xl"></i>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Eyebrow Makeup</h3>
+          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
+          <a href="#" class="text-white mt-3">Read More</a>
+        </div>
+        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+          <i class="ri-scissors-line text-pink-600 text-7xl"></i>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Haircut Makeup</h3>
+          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
+          <a href="#" class="text-white mt-3">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- script link -->
   <script src="assets/js/script.js"></script>
 
@@ -199,4 +371,4 @@
 
 </body>
 
-</html>1e7ffd5f27e3b6fd
+</html>
