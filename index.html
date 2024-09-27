@@ -23,6 +23,16 @@
     href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Long+Cang&family=Teko:wght@300..700&display=swap"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   <!-- link css -->
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Fredia</title>
@@ -31,7 +41,7 @@
 <body>
 
 
-  <!-- start of hero -->
+  <!-- hero section start -->
   <section class="hero-slider hero-style overflow-x-hidden">
     <!-- header section -->
     <header class="sticky top-0 z-40 py-5 px-5 md:px-14 flex justify-between h-fit w-full items-center">
@@ -201,13 +211,15 @@
     <!-- end of hero slider -->
 
   </section>
+  <!-- hero section end -->
 
-  <!-- about section -->
+  <!-- about section start -->
   <section class="about_section bg-black py-32 px-5 md:px-10 lg:px-20  grid grid-cols-9 gap-8">
     <div class="about_text col-span-9 md:col-span-5 lg:col-span-6">
-      <h4 class="text-pink-600 text-3xl md:text-4xl">15 years experience</h4>
-      <h2 class="text-white my-3 text-4xl md:text-6xl">About the Fredia</h2>
-      <p class="text-white text-md">Makeup faucibus mi id convallis pulvinar velit est vulputate elit sed suscin the
+      <h4 class="section_sub_heading text-pink-600 text-3xl md:text-4xl">15 years experience</h4>
+      <h2 class="section_heading text-white my-3 text-4xl md:text-6xl">About the Fredia</h2>
+      <p class="section_para text-white text-md">Makeup faucibus mi id convallis pulvinar velit est vulputate elit sed
+        suscin the
         maurisen
         anteeget mi. Mauris tincidunt nulla. Donec velit urna congue et magna uthe consele tecmetur accumsan turpis.
         Etiam ac torto the luctus. Etiam ac tortor porttitor lucte odio ac aliquam augue.
@@ -217,8 +229,8 @@
         viverra dana elemtum velit. The etiam ac tortor porttitor luctus odio ac aliquam augue. Praesent the dienis
         elemen erateun interdun elit. Curabitur man ipse rhoncus felis nonte viverra.
       </p>
-      <h4 class="text-pink-600 text-end text-3xl md:text-4xl mt-5">Fredia Victoria</h4>
-      <p class="text-white text-end  text-md">Head Makeup Artist & Hairstylist and Founder</p>
+      <h4 class="section_sub_heading text-pink-600 text-end text-3xl md:text-4xl mt-5">Fredia Victoria</h4>
+      <p class="section_para text-white text-end  text-md">Head Makeup Artist & Hairstylist and Founder</p>
     </div>
     <div class="group about_img col-span-9 md:col-span-4 lg:col-span-3 h-full">
       <figure
@@ -227,16 +239,17 @@
       </figure>
     </div>
   </section>
+  <!-- about section end -->
 
-  <!-- service section -->
+  <!-- service section start-->
   <section class="service_section bg-black pt-10 pb-32 px-5 md:px-10 lg:px-20">
     <div class="beauty_service">
-      <h4 class="text-pink-600 text-3xl md:text-4xl">Our beauty services</h4>
-      <h2 class="text-white my-3 text-4xl md:text-6xl">We provide quality services</h2>
+      <h4 class="section_sub_heading text-pink-600 text-3xl md:text-4xl">Our beauty services</h4>
+      <h2 class="section_heading text-white my-3 text-4xl md:text-6xl">We provide quality services</h2>
       <div class="grid grid-cols-9 gap-5 mt-5">
         <div class="col-span-1 hidden md:block border-t-2 border-pink-600 border-solid"></div>
         <div class="col-span-9 md:col-span-5">
-          <p class="text-md text-white">
+          <p class="section_para text-md text-white">
             <span class="text-pink-600">Our services are summarized as follows. Makeup fusce ornare ut tortor ac
               hendrerit. Suspendisse sed sem tincidunt dui congue fermentum.</span>
             <br>
@@ -324,36 +337,128 @@
       </div>
     </div>
     <div class="senior_services mt-40">
-      <h4 class="text-pink-600 text-3xl md:text-4xl">Our senior services</h4>
-      <h2 class="text-white my-3 text-4xl md:text-6xl">Makeup Services</h2>
-      <div class="senior_service_card_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 gap-10 lg:gap-5 xl:gap-10">
-        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+      <h4 class="section_sub_heading text-pink-600 text-3xl md:text-4xl">Our senior services</h4>
+      <h2 class="section_heading text-white my-3 text-4xl md:text-6xl">Makeup Services</h2>
+      <div
+        class="senior_service_card_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 gap-10 lg:gap-5 xl:gap-10">
+        <div
+          class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
           <i class="ri-user-smile-line text-pink-600 text-7xl"></i>
-          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Face Makeup</h3>
-          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
-          <a href="#" class="text-white mt-3">Read More</a>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Face
+            Makeup</h3>
+          <p class="section_para text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor
+            semper lobortis.</p>
+          <a href="#" class="section_para text-white mt-3">Read More</a>
         </div>
-        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+        <div
+          class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
           <i class="ri-eye-line text-pink-600 text-7xl"></i>
-          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Eye Makeup</h3>
-          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
-          <a href="#" class="text-white mt-3">Read More</a>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Eye
+            Makeup</h3>
+          <p class="section_para text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor
+            semper lobortis.</p>
+          <a href="#" class="section_para text-white mt-3">Read More</a>
         </div>
-        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+        <div
+          class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
           <i class="ri-eye-close-line text-pink-600 text-7xl"></i>
-          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Eyebrow Makeup</h3>
-          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
-          <a href="#" class="text-white mt-3">Read More</a>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">
+            Eyebrow Makeup</h3>
+          <p class="section_para text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor
+            semper lobortis.</p>
+          <a href="#" class="section_para text-white mt-3">Read More</a>
         </div>
-        <div class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
+        <div
+          class="group senior_service_card col-span-1 bg-zinc-900 border-b border-gray-900 hover:border-pink-600 transition-all duration-300 flex flex-col items-center py-8 px-5">
           <i class="ri-scissors-line text-pink-600 text-7xl"></i>
-          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">Haircut Makeup</h3>
-          <p class="text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor semper lobortis.</p>
-          <a href="#" class="text-white mt-3">Read More</a>
+          <h3 class="text-white transition-all duration-300 group-hover:text-pink-600 mt-5 text-xl font-semibold">
+            Haircut Makeup</h3>
+          <p class="section_para text-white mt-2 text-center">Fusce cursus lectus tellus. Vivamus cursus turpis auctor
+            semper lobortis.</p>
+          <a href="#" class="section_para text-white mt-3">Read More</a>
         </div>
       </div>
     </div>
   </section>
+  <!-- service section end-->
+
+  <!-- testimonal section start-->
+  <section class="testimonal_section py-20 px-5 sm:px-10 lg:px-20 w-full bg-center bg-fixed"
+    style="background-image: url(assets/img/slider/02.jpg);">
+    <h4 class="section_sub_heading text-pink-600 text-3xl md:text-4xl text-center">Kind words...</h4>
+    <h2 class="section_heading text-white my-3 text-4xl md:text-6xl text-center">What Client Say</h2>
+    <div class="tesitmonal_container gap-10 mt-10">
+      <div class="owl-carousel owl-theme w-full">
+        <div class="item">
+          <div class="testimonal_card border-b-2 border-pink-600 col-span-1 bg-zinc-900 p-8">
+            <p class="text-white section_para text-md">"Fredia is fantastic! From someone who is very particular about
+              their
+              make up, Fredia gave me the best makeover I could have imagined, and all worries flew away. Fredia is also
+              a
+              very fast and dynamic hairstylist too."</p>
+            <div class="user_detail_container flex gap-5 mt-5 items-center">
+              <img src="assets/img/team/01.png" alt="" class="!w-20">
+              <div class="user_details">
+                <h5 class="text-white section_heading text-lg">Tammy White</h5>
+                <p class="text-pink-600 section_para text-sm font-semibold">Designer at MBA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonal_card border-b-2 border-pink-600 col-span-1 bg-zinc-900 p-8">
+            <p class="text-white section_para text-md">"Fredia is fantastic! From someone who is very particular about
+              their
+              make up, Fredia gave me the best makeover I could have imagined, and all worries flew away. Fredia is also
+              a
+              very fast and dynamic hairstylist too."</p>
+            <div class="user_detail_container flex gap-5 mt-5 items-center">
+              <img src="assets/img/team/02.png" alt="" class="!w-20">
+              <div class="user_details">
+                <h5 class="text-white section_heading text-lg">Emily Betty</h5>
+                <p class="text-pink-600 section_para text-sm font-semibold">Teacher at Uni</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonal_card border-b-2 border-pink-600 col-span-1 bg-zinc-900 p-8">
+            <p class="text-white section_para text-md">"Fredia is fantastic! From someone who is very particular about
+              their
+              make up, Fredia gave me the best makeover I could have imagined, and all worries flew away. Fredia is also
+              a
+              very fast and dynamic hairstylist too."</p>
+            <div class="user_detail_container flex gap-5 mt-5 items-center">
+              <img src="assets/img/team/03.png" alt="" class="!w-20">
+              <div class="user_details">
+                <h5 class="text-white section_heading text-lg">Betty Dan</h5>
+                <p class="text-pink-600 section_para text-sm font-semibold">Stylist at COA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonal_card border-b-2 border-pink-600 col-span-1 bg-zinc-900 p-8">
+            <p class="text-white section_para text-md">"Fredia is fantastic! From someone who is very particular about
+              their
+              make up, Fredia gave me the best makeover I could have imagined, and all worries flew away. Fredia is also
+              a
+              very fast and dynamic hairstylist too."</p>
+            <div class="user_detail_container flex gap-5 mt-5 items-center">
+              <img src="assets/img/team/04.png" alt="" class="!w-20">
+              <div class="user_details">
+                <h5 class="text-white section_heading text-lg">Olivia Brown</h5>
+                <p class="text-pink-600 section_para text-sm font-semibold">Fashion Artist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonal section start-->
+
+  <!--  -->
 
   <!-- script link -->
   <script src="assets/js/script.js"></script>
@@ -368,6 +473,35 @@
 
   <!-- Load custom script -->
   <script src="assets/js/hero_slider.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+
+      }
+    })
+  </script>
+
 
 </body>
 

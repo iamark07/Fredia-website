@@ -298,41 +298,35 @@ header nav ul li a{
 
 /* about section */
 
-.about_text h4{
+.section_sub_heading{
   font-family: "Long Cang", cursive;
 }
 
-.about_text h2{
+.section_heading{
   font-family: "Teko", sans-serif;
 }
 
-.about_text p{
+.section_para{
   font-family: "Didact Gothic", sans-serif;
 }
 
 
-/* service section */
-
-.service_section h4{
-  font-family: "Long Cang", cursive;
-}
-.service_section h2{
-  font-family: "Teko", sans-serif;
-}
-
-.service_img_card h3{
-  font-family: "Teko", sans-serif;
-} 
 
 
-.senior_service_card h2{
-  font-family: "Teko", sans-serif;
+/* testimonal section */
+
+.owl-theme .owl-nav{
+  display: none !important;
 }
 
-.senior_service_card p{
-  font-family: "Didact Gothic", sans-serif;
+.owl-dots{
+  margin-top: 35px;
 }
 
-.senior_service_card a{
-  font-family: "Didact Gothic", sans-serif;
+.owl-dot.active span{
+  background-color: rgb(219, 39, 119) !important;
 }
+
+
+
+
