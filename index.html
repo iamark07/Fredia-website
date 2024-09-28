@@ -38,8 +38,17 @@
   <title>Fredia</title>
 </head>
 
-<body>
+<body id="get_to_top" class="relative">
 
+
+  <!-- get to top btn -->
+  <div class="get_to_top_btn fixed z-50 bottom-5 right-5 animate-move1">
+    <a href="#get_to_top"
+      class="flex flex-col items-center bg-pink-600 border-white border-opacity-40 border py-2 px-5 text-white">
+      <i class="ri-arrow-up-line"></i>
+      <span class="text-sm">Top</span>
+    </a>
+  </div>
 
   <!-- hero section start -->
   <section class="hero-slider hero-style overflow-x-hidden">
@@ -60,9 +69,6 @@
           </li>
           <li><a href="#service_section"
               class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Services</a>
-          </li>
-          <li><a href="#gallery_section"
-              class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Gallery</a>
           </li>
           <li><a href="#blog_section"
               class="text-white text-2xl hover:text-pink-600 border-b-2 border-transparent hover:border-pink-500 transition-all duration-300">Blog</a>
@@ -90,8 +96,6 @@
                   class="text-white text-2xl hover:text-pink-600 transition-all duration-300">About</a></li>
               <li><a href="#service_section"
                   class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Services</a></li>
-              <li><a href="#gallery_section"
-                  class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Gallery</a></li>
               <li><a href="#blog_section"
                   class="text-white text-2xl hover:text-pink-600 transition-all duration-300">Blog</a></li>
               <li><a href="#contact_section"
@@ -524,7 +528,7 @@
   <!-- blog section end -->
 
   <!-- contact section start -->
-   <section class="contact_section bg-black pb-32 px-5 md:px-10 xl:px-20">
+  <section class="contact_section bg-black pb-32 px-5 md:px-10 xl:px-20">
     <h4 class="long_font text-pink-600 text-3xl md:text-4xl">Informations</h4>
     <h2 class="teko_font text-white my-3 text-4xl md:text-6xl">Contact Our Makeup Office</h2>
     <div class="grid grid-cols-9 gap-5 mt-5">
@@ -534,36 +538,108 @@
           Getting married or interested in getting glam? Find out whether I'm available, enquire today!
         </p>
         <div class="contact_detail_container">
-          <h4 class="text-pink-600 text-md Didact_font mt-5">Phone: <a href="tel:1234567000"> <span class="text-white">(+91) 1234567000</a></span></h4>
+          <h4 class="text-pink-600 text-md Didact_font mt-5">Phone: <a href="tel:1234567000"> <span
+                class="text-white">(+91) 1234567000</a></span></h4>
           <h4 class="text-pink-600 text-md Didact_font mt-2">Email: <span class="text-white">xyz@gmail.com</span></h4>
-          <h4 class="text-pink-600 text-md Didact_font mt-2">Address: <span class="text-white">707 North West Ave, CT 07750 Connecticut Norwalk USA</span></h4>
+          <h4 class="text-pink-600 text-md Didact_font mt-2">Address: <span class="text-white">707 North West Ave, CT
+              07750 Connecticut Norwalk USA</span></h4>
         </div>
       </div>
       <div class="col-span-9 lg:col-span-4 mt-10 lg:mt-0">
         <h3 class="text-white teko_font text-4xl">Quick appointment</h3>
         <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5" onsubmit="return validateForm(event)">
           <div class="input_box col-span-1">
-            <input type="text" id="name" placeholder="Name" class="w-full p-4 bg-transparent border-b border-zinc-700 outline-none text-white Didact_font">
-            <p id="nameError" class="text-red-500 text-sm mt-1 hidden teko_font">Name must be at least 5 characters long.</p>
+            <input type="text" id="name" placeholder="Name"
+              class="w-full p-4 bg-transparent border-b border-zinc-700 outline-none text-white Didact_font">
+            <p id="nameError" class="text-red-500 text-sm mt-1 hidden teko_font">Name must be at least 5 characters
+              long.</p>
           </div>
           <div class="input_box col-span-1">
-            <input type="email" id="email" placeholder="Email" class="w-full p-4 bg-transparent border-b border-zinc-700 outline-none text-white Didact_font">
-            <p id="emailError" class="text-red-500 text-sm mt-1 hidden teko_font">Please enter a valid email address.</p>
+            <input type="email" id="email" placeholder="Email"
+              class="w-full p-4 bg-transparent border-b border-zinc-700 outline-none text-white Didact_font">
+            <p id="emailError" class="text-red-500 text-sm mt-1 hidden teko_font">Please enter a valid email address.
+            </p>
           </div>
           <div class="input_box col-span-1 md:col-span-2">
-            <textarea id="message" placeholder="Message" class="w-full p-4 bg-transparent border-b border-zinc-700 outline-none text-white h-32 Didact_font"></textarea>
-            <p id="messageError" class="text-red-500 text-sm mt-1 hidden teko_font">Message must be at least 10 characters long.</p>
+            <textarea id="message" placeholder="Message"
+              class="w-full p-4 bg-transparent border-b border-zinc-700 outline-none text-white h-32 Didact_font"></textarea>
+            <p id="messageError" class="text-red-500 text-sm mt-1 hidden teko_font">Message must be at least 10
+              characters long.</p>
           </div>
           <div class="input_submit_btn">
-            <input type="submit" value="Send Message" class="bg-pink-600 text-white py-4 px-7 text-xl rounded-sm teko_font cursor-pointer">
+            <input type="submit" value="Send Message"
+              class="bg-pink-600 text-white py-4 px-7 text-xl rounded-sm teko_font cursor-pointer">
           </div>
         </form>
       </div>
       <div class="col-span-9 mt-10">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230816.6235267325!2d82.82594520843351!3d25.320670618825286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1727506398795!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-80 md:h-[500px]"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230816.6235267325!2d82.82594520843351!3d25.320670618825286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1727506398795!5m2!1sen!2sin"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="w-full h-80 md:h-[500px]"></iframe>
       </div>
-   </section>
-   <!-- contact section end -->
+  </section>
+  <!-- contact section end -->
+
+  <footer class=" border-t border-zinc-700">
+    <div
+      class="footer_detail_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20 bg-black py-32 px-5 md:px-10 xl:px-20">
+      <div class="footer_detail col-span-1">
+        <h2 class="text-pink-600 text-4xl teko_font">Address Informations</h2>
+        <ul class="mt-3">
+          <li class="text-white Didact_font">Fredia Victoria <br> Makeup & Style</li>
+          <li class="text-white Didact_font">707 West Ave, CT 07750 onnecticut — Norwalk</li>
+        </ul>
+      </div>
+      <div class="footer_detail col-span-1">
+        <h2 class="text-pink-600 text-4xl teko_font">Contact Details</h2>
+        <ul class="mt-3">
+          <li class="text-white Didact_font">E-mail Address: xyz@gmail.com</li>
+          <li class="text-white Didact_font mt-5">
+            <button>
+              <a href="#contact" class="teko_font text-lg text-white bg-pink-600 px-7 py-3 inline-block">Contact Us!</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_detail col-span-1 md:col-span-2 lg:col-span-1">
+        <h2 class="text-pink-600 text-4xl teko_font">
+          <a href="tel:1234567000">(+91) 1234567000</a>
+        </h2>
+        <ul class="mt-3">
+          <li class="text-white Didact_font">Working Hours: <br> Mon-Fri: 08.00 - 19.00</li>
+          <li class="text-white Didact_font">Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub_footer py-7 md:py-10 px-5 md:px-20 gap-5 bg-pink-600 flex flex-col md:flex-row md:justify-between">
+      <p class="text-white text-center md:text-start">© 2021. All right reserved. Terms & Conditions</p>
+      <div class="footer_social">
+        <ul class="flex justify-center gap-5">
+          <li>
+            <a href="#">
+              <i class="ri-instagram-line text-white text-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-pinterest-line text-white text-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-facebook-fill text-white text-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-youtube-line text-white text-xl"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <!-- script link -->
   <script src="assets/js/script.js"></script>
