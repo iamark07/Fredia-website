@@ -295,18 +295,15 @@ header nav ul li a{
 }
 
 
-
-/* about section */
-
-.section_sub_heading{
+.long_font{
   font-family: "Long Cang", cursive;
 }
 
-.section_heading{
+.teko_font{
   font-family: "Teko", sans-serif;
 }
 
-.section_para{
+.Didact_font{
   font-family: "Didact Gothic", sans-serif;
 }
 
@@ -319,14 +316,24 @@ header nav ul li a{
   display: none !important;
 }
 
-.owl-dots{
+.tesitmonal_container .owl-carousel .owl-dots{
   margin-top: 35px;
 }
 
-.owl-dot.active span{
+.tesitmonal_container .owl-carousel .owl-dot.active span{
   background-color: rgb(219, 39, 119) !important;
 }
 
+.blog_card_container .owl-carousel .owl-dot{
+  display: none !important;
+}
 
+.owl-carousel.owl-drag .owl-item{
+  height: 100% !important;
+}
+
+.owl-carousel .owl-stage{
+  height: 100%;
+}
 
 
