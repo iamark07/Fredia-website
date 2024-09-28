@@ -1,3 +1,87 @@
+// page loader 
+
+// Minimum display time for loader in milliseconds (3 seconds)
+const minimumLoaderTime = 3000;
+
+window.addEventListener('load', function() {
+  const loader = document.querySelector('.page_loader');
+
+  // Get the current time when the page starts loading
+  const startTime = Date.now();
+
+  // Ensure loader shows for at least 3 seconds
+  setTimeout(() => {
+    // Check if the page has fully loaded
+    const timeElapsed = Date.now() - startTime;
+
+    if (timeElapsed >= minimumLoaderTime) {
+      hideLoader(); // Hide loader immediately after 3 seconds
+    } else {
+      // If page loads before 3 seconds, wait for the remaining time
+      setTimeout(hideLoader, minimumLoaderTime - timeElapsed);
+    }
+  }, minimumLoaderTime);
+
+  // Function to hide loader (set opacity to 0 and disable pointer events)
+  function hideLoader() {
+    loader.style.opacity = '0';
+    loader.style.pointerEvents = 'none'; // Make it non-interactive
+
+    // No need to use display: none; we just let it fade out with opacity
+  }
+});
+
+
+// get to top btn
+
+// Get the button element
+const getToTopBtn = document.querySelector(".get_to_top_btn");
+
+// Add a scroll event listener
+window.addEventListener("scroll", function () {
+  // Check if the page has been scrolled more than 40px
+  if (window.scrollY > 200) {
+    getToTopBtn.classList.remove("opacity-0"); // Show the button
+    getToTopBtn.classList.remove("pointer-events-none"); // Show pointer-events-initial
+  } else {
+    getToTopBtn.classList.add("opacity-0"); // Hide the button
+    getToTopBtn.classList.add("pointer-events-none"); // Hide pointer-events-initial
+
+  }
+});
+
+const header = document.querySelector("header");
+
+// Add a scroll event listener
+window.addEventListener("scroll", function () {
+  // Check if the page has been scrolled more than 40px
+  if (window.scrollY > 100) {
+    header.classList.add("bg-zinc-900"); // Show pointer-events-initial
+  } else {
+    header.classList.remove("bg-zinc-900");  // Hide pointer-events-initial
+  }
+});
+
+
+
+
+// nav active link
+
+let nav = document.querySelectorAll("ul li a");
+
+nav.forEach( (active)=>{
+  active.addEventListener("click", ()=>{
+    remove_active_btn();
+    active.classList.add("active_btn");
+  });
+});
+
+function remove_active_btn(){
+  nav.forEach( (active)=>{
+    active.classList.remove("active_btn");
+  })
+}
+
 // menu slider function
 
 let menu_slider_val = true;
